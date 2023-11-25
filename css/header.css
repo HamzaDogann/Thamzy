@@ -1,0 +1,63 @@
+@import url("/css/sections.css");
+header {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid rgba(201, 201, 201, 0.54);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: top 0.4s;
+    background: #fff;
+    z-index: 99;
+}
+
+
+header .logo h3 span{
+ color: var(--OrangeTheme);
+ 
+}
+
+header .container .menu{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+nav .menu li {
+    display: inline-block;
+    margin: 10px 30px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+
+}
+nav .menu li div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu li:hover{
+    color: var(--OrangeTheme);
+}
+
+
+.mobile-menu{
+    display: none;
+}
+
+
+
+/* Search Image Header */
+
+#company-tittle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: slideleft3 0.9s linear forwards;
+}
+#company-tittle a h3 span{
+    color: var(--OrangeTheme);
+}
+

@@ -1,0 +1,112 @@
+/* Temel CSS Sıfırlama */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+    
+}
+
+::-webkit-scrollbar-track {
+    background: #dcdcdc7f;
+}
+
+::-webkit-scrollbar-thumb {
+    background:var(--OrangeTheme); /* Kaydırma çubuğu rengi */
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+/* İsteğe bağlı olarak yatay kaydırma çubuğunu da özelleştirebilirsiniz */
+::-webkit-scrollbar-thumb:hover {
+    background: #ff9900; /* Kaydırma çubuğu üzerine gelindiğinde rengi */
+}
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+dd,
+dt,
+form,
+fieldset,
+input,
+textarea,
+button,
+img {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: var(--body-color);
+    background-color: #ffffff;
+}
+
+img{
+    max-height: 700px;
+}
+
+
+.container {
+    max-width: 1700px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.flex-items-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+h1{
+    font-size: var(--font-size-h1);
+}
+
+h2{
+    font-size: var(--font-size-h2);
+}
+
+h3{
+    font-size: var(--font-size-h3);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.material-symbols-outlined {
+    margin-right: 8px; 
+}
+
+
+
+

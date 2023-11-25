@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Thamzy | Search Image</title>
+</head>
+
+<body>
+
+
+
+
+    <header id="header-box">
+        <div class="container">
+        <a id="currentlyAdress" href="main.html"><button id="back-button"><span
+                    class="material-symbols-outlined">arrow_back</span></button></a>
+        <div class="container">
+            <div id="company-tittle">
+                <a href="main.html">
+                    <h3><span>T</span>hamzy</h3>
+                </a>
+            </div>
+        </div>
+        <button id="favoritePic-button"><span
+            class="material-symbols-outlined">favorite</span></button>
+        </div>
+    </header>
+
+    <section class="general-box" id="gb1">
+        <div class="container">
+            <div class="flex">
+                <div class="flex-item flex-items-center" id="search-input-box">
+                    <input type="text" placeholder="Search Image..." id="search-input">
+                    <button id="search-btn"><span class="material-symbols-outlined">image_search</span></button>
+
+                </div>
+                <div class="flex-item search-results">
+                    <div class="image-box">
+                        <div class="grid-container" id="pictures-list">
+                            <!-- Listelenen Fotoğraflar -->
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-item">
+                    <button id="show-more-btn">Show more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seçilen Fotoğraf Bilgileri -->
+
+    <button id="closeButton"><span class="material-symbols-outlined">close</span></button> 
+
+    <div class="selected-image-box">
+        <div class="image-infos">
+            <div class="ii-flex">
+                <div class="ii-flex-item1">
+                    <img id="currentlyImage" src="" alt="">
+                </div>
+                <div class="ii-flex-item2">
+                    <div class="download-box flex-items-center">
+                        <a id="downloadLink" href="" target="_blank">Download</a>
+                    </div>
+                    <div class="allLikes-Box flex-items-center">
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span id="likes">Loading...</span>
+                    </div>
+                    <span class="ii-flex-i2-style">Creator</span>
+                    <div>
+                        <div id="CreatorBox" style="display: flex; align-items: center;">
+                            <img id="creatorPPImg" src="">
+                            <span id="creatorName">Loading...</span>
+                        </div>
+                        
+                    </div>
+                    <a id="imageSource" href=""><button id="source-btn" class="ii-flex-i2-style"><span class="material-symbols-outlined">arrow_outward</span>Source</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Beğenilen Fotoğraflar -->
+    
+    <section class="general-box" id="gb2" style="display: none;" >
+        <div class="container">
+            <div class="flex">
+                
+                <img id="noFoundBackground" src="images/NoLikedImagesVector.jpg" alt="">
+                <div class="flex-item flex-items-center" id="titleBox">
+                    <h1 id="titleContent">Your Favorite Images</h1>
+               </div>
+
+                <button id="deleteAllImages" class="flex-items-center">
+                    <span style="font-size: 30px;" class="material-symbols-outlined">delete_sweep</span>
+                  <span>Delete All</span> 
+                 </button>
+
+                 
+
+             
+                <div class="flex-item search-results">
+                    <div class="image-box" id="bgClose">
+                        <div class="grid-container" id="liked-pictures-list">
+                            <!-- <img src="images/NoLikedImagesVector.jpg" alt=""> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+   
+
+    <!-- Popup, bildirim ve yükleme  -->
+
+    <div class="loading-overlay">
+         <h3 style="margin-bottom: 14px;"><span style="color: var(--OrangeTheme);">T</span>hamzy</h3>   
+        <div class="loader"></div>
+    </div>
+
+    <div class="alert-box" id="alt-box">
+        <div class="alert-flex">
+            <img src="images/checkImg.png" alt="" id="alertImg">
+            <span id="alert-message"></span>
+        </div>
+    </div>
+    
+
+    
+    <button id="up-button">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <p>Do you want to remove this image from your favorites list?</p>
+          <div class="modal-buttons">
+            <button id="confirmButton">Delete</button>
+            <button id="cancelButton">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+      <script src="scripts/loading.js"></script>
+    <script src="scripts/search.js"></script>
+    
+</body>
+
+</html>
